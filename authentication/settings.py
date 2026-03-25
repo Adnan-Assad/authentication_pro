@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-&9--24=@t4s%pb4h9_zsh67k^)b30x($*@n17uj=p29bn10%da
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'authentication-kgtqdibf8g-adnans-projects-51ae2055.vercel.app',
+    '.vercel.app',
+    '127.0.0.1',
+    'localhost'
+]
 
 
 # Application definition
@@ -55,7 +60,7 @@ ROOT_URLCONF = 'authentication.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR , 'authentication/Templates'],
+        'DIRS': [BASE_DIR / 'authentication'/'Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,3 +121,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+ 
